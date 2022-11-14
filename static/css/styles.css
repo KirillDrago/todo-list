@@ -1,0 +1,9 @@
+.sidebar-nav {
+     padding: 0;
+    list-style: none;
+    width: 250px;
+}
+.sidebar-nav > li {
+    border: 1px solid grey;
+    padding: 10px;
+}

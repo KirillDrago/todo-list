@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <h1>TODO list</h1>
+    {% for task in tasks %}
+      <strong>{{ task.content }}</strong> {{ task.status }}
+      <p>Created: {{ task.datetime }}</p>
+      <p>Tags: {{ task.tags.name }}</p>
+
+    {% endfor %}
+
+
+{% endblock %}
