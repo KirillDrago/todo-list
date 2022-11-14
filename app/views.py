@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.views import generic
 
@@ -58,4 +58,3 @@ def task_status(request, pk):
         task.status = True
     task.save()
     return redirect("app:task-list")
-
